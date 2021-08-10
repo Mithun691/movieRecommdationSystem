@@ -1,4 +1,4 @@
-## movieRecommdationSystem
+## movieRecommendationSystem
 
 ### There are 3 python notebooks 1 each for demographic,content-based and collaborative filtering ,the dataset are present in the parent folder.Please change the data path if you are running in your local machine.
 
@@ -12,3 +12,9 @@ In colab you can directly access data using this link by mounting the google dri
 1. For demographic filtering no input needs to be given as the recommendations are general based on popularity,ratings,director,actor etc. just run all the cells and check the recommendations
 2. For content based filtering you need to input the number of movies rated,corresponding movie names and ratings in the input prompt that shows at the end of the notebook.Please check out the exact movie names ‘The’,case of initials etc.A cell has been provided to check the rowId of the movie if that comes out to be ‘-1’  your movie is invalid.Moreover,the prompt also flags an error and asks for the to be fed again.
 3. For collaborative filtering change the userId(‘id’) which has been set to 348 to get recommendations for other users.
+
+### Results
+
+1. SVD works better than NMF with a MAE error on the validation ratings matrix (MovieLens Dataset)
+2. The recommendation for customer 348 (test customer) shows the influence of genre, cast, crew preferences clearly
+3. The customer is recommeded SciFi, Leonardo DiCaprio's hits , Christopher Nolan's classics based on his similarity with other customers & their watch history & vice-versa
