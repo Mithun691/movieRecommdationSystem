@@ -15,6 +15,6 @@ In colab you can directly access data using this link by mounting the google dri
 
 ### Results
 
-1. SVD works better than NMF with a MAE error on the validation ratings matrix (MovieLens Dataset)
+1. SVD works better than NMF with a MAE error of 0.82 on the validation ratings matrix (MovieLens Dataset)
 2. The recommendation for customer 348 (test customer) shows the influence of genre, cast, crew preferences clearly
 3. The customer is recommeded SciFi, Leonardo DiCaprio's hits , Christopher Nolan's classics based on his similarity with other customers & their watch history & vice-versa
